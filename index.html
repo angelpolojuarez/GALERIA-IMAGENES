@@ -3,41 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALERÍA</title>
+    <title>Galería - Dragon Ball Z</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f0f0f0;
         }
+
         h1 {
             margin-top: 20px;
             color: #ff6600;
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 30px;
+            gap: 20px;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 1200px;
         }
+
         .galeria {
             width: 300px;
-            height: auto;
-            margin: 10px;
+            height: 400px;
+            object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .galeria {
+                width: 90%;
+                height: auto;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
+
 <body>
+
     <h1>Dragon Ball Z</h1>
+
     <div class="container">
-        <img class="galeria" src="https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F81472-7.jpg&w=640&q=75" alt="Imagen 1">
-        <img class="galeria" src="https://static.bandainamcoent.eu/high/dragon-ball/dragonball-project-z/00-page-setup/dbzk_game-thumbnail.jpg" alt="Imagen 2">
-        <img class="galeria" src="https://es.gizmodo.com/app/uploads/2019/11/ciplqnpuxlqxvbeg5eev.jpg" alt="Imagen 3">
-        <img class="galeria" src="https://i.pinimg.com/736x/ac/65/e9/ac65e96dc167fbc1fd72db98b602a792.jpg" alt="Imagen 4">
-        <img class="galeria" src="https://e.rpp-noticias.io/xlarge/2021/04/26/023002_1087228.jpg" alt="Imagen 5">
-        <img class="galeria" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlY76s80GXYaHfaPSQE8RhxAc4-hLUN-RT4up8GRa9kxYnkVuHUyszVKHWoopswyC_fCw&usqp=CAU" alt="Imagen 6">
+
+        <img
+            class="galeria"
+            src="https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Fposters%2F81472-7.jpg&w=640&q=75"
+            alt="Dragon Ball Z - Imagen 1"
+        >
+
+        <img
+            class="galeria"
+            src="https://static.bandainamcoent.eu/high/dragon-ball/dragonball-project-z/00-page-setup/dbzk_game-thumbnail.jpg"
+            alt="Dragon Ball Z - Imagen 2"
+        >
+
+        <img
+            class="galeria"
+            src="https://es.gizmodo.com/app/uploads/2019/11/ciplqnpuxlqxvbeg5eev.jpg"
+            alt="Dragon Ball Z - Imagen 3"
+        >
+
+        <img
+            class="galeria"
+            src="https://i.pinimg.com/736x/ac/65/e9/ac65e96dc167fbc1fd72db98b602a792.jpg"
+            alt="Dragon Ball Z - Imagen 4"
+        >
+
+        <img
+            class="galeria"
+            src="https://e.rpp-noticias.io/xlarge/2021/04/26/023002_1087228.jpg"
+            alt="Dragon Ball Z - Imagen 5"
+        >
+
+        <img
+            class="galeria"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlY76s80GXYaHfaPSQE8RhxAc4-hLUN-RT4up8GRa9kxYnkVuHUyszVKHWoopswyC_fCw&usqp=CAU"
+            alt="Dragon Ball Z - Imagen 6"
+        >
+
     </div>
+
 </body>
 </html>
